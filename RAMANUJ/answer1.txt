@@ -1,1 +1,9 @@
-just checking
+just checkinCherry picking - If we want to integrate selected individual commits from any branch into our head branch. Basically cherry pick allows us to select individual commits for integration.
+
+Use case - 
+If we by mistake make a commit to the wrong branch, then we can use git cherry pick to copy it to the right one, then we can do reset to undo that commit.
+
+steps-
+1. you only need to provide the SHA identifier of the commit you want to integrate into your current HEAD branch.
+2. $ git cherry-pick fac1c4f767d2934f992e00a7e0f9236eacb202a3
+
