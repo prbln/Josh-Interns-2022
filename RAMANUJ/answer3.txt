@@ -1,0 +1,7 @@
+We make use of rebase and squash to merge two or multiple commits when we have four commits.
+
+If we want to merge commit 1 and commit 4 then the first step is command
+$ git rebase -i HEAD~4
+
+this command will open editor with last four commits with pick written infront of them, now the next step is we write p infront of the commit with which
+we want to merge and s infront of the commit which we want to merge with another commit.
