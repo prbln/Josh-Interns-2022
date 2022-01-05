@@ -1,0 +1,15 @@
+Cherrypicking is the concept of adding commits made in another branch to our own branch.
+============================
+It is used in two cases
+
+1) when we accidently make changes to a branch that were intended to be made in another branch.
+2) if we want to add specific changes or commits done by another person to our own branch 
+
+It is useful for testing and fixing bugs , restoring changes made and when it is not possible to merge a branch completely due to
+some issues.
+=============================
+Steps of cherrypicking-
+
+1) note the commitid that we want to include in our branch by using the command  git log
+2) checkout to the branch in which we want to include the commit
+3) now use the command git cherry-pick <commitid>
