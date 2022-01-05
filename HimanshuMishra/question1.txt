@@ -1,0 +1,20 @@
+
+Cherry Pick 
+As the name suggests cherry pick is used to selectively pick and merge the commits in the head branch 
+With the "cherry-pick" command, Git allows you to integrate selected, individual commits from any branch into your current HEAD branch.
+For example if in my branch himanshu I have C1 ,C2,C3 ,C4 and we want to merge only c1 and c2 in our main branch then we can use cherry pick
+ for this purpose
+
+the command to do it is
+
+git cherry-pick bd0123
+
+where bd0123 is the SHA identifier of the commit .
+
+Cherry pick creates a duplicate commits when we integrate our commit into our main branch
+
+Steps to use cherry -
+1. note the identifier of the commit you want to merge
+2. checkout to head branch repository
+3. use git checkout commitid command to merge the commits
+
