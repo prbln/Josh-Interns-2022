@@ -1,0 +1,7 @@
+q2 : Yes it is possible to setup multiple remote repositaries in one project.
+It can be used when you want to have multiple backup of your project.
+
+We can setu multiple remote repos using the command
+git add remote <remote name> <remote url>
+we can use multiple repos for better team work and maintainability of the project
+gitub provides limited storage so for big projects we can use multi remote repo

@@ -1,0 +1,9 @@
+q4 : git reset HEAD^ makes uncommits the last commitin the branch
+
+Using the git log above we want to remove the following commits; 2 & 3 (ae45fab & 77b9b82). As they are consecutive commits we can use rebase.
+
+git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>
+
+e.g to remove commits 2 & 3 above:
+
+git rebase --onto <commit~3> <commit~1> <branch name>

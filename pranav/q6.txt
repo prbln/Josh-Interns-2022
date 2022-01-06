@@ -1,0 +1,2 @@
+q6 : git reset --<filename> unstages the specified file.
+git reset unstages all the files
