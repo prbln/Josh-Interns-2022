@@ -1,0 +1,18 @@
+q5 : git push --force makes changes in the remote repo and forcing the changes to be made i.e. the changes made by other contributors is overlooked.
+It overlooks the history and makes the changes.
+git push --force-with-lease makes changes in the remote repo but not forcefully changing without overlooking the history and considering other contributors commits too.
+When to Use Force with Lease
+Assuming a regular push does not work, one does not need to use force if they are doing decent day-to-day work. 
+Every day-to-day need is satisfied with force-with-lease. These include any sort of a rebase, particularly:
+Rebase a branch onto another branch,
+Rewording a commit in the past,
+Squashing a few commits together,
+Reordering the commits, or
+Changing the author of a previous commit.
+
+
+When to Use Force
+When doing something nasty. This includes:
+Removing a commit together with its contributions from history,
+Removing a large file that was accidentally committed from history,
+Removing a folder from the repo together with all its history.

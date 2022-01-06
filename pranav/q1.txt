@@ -1,0 +1,20 @@
+Q1 : - git cherry-pick is a powerful command that enables arbitrary Git commits to be picked by reference and appended to the current working HEAD. 
+Cherry picking is the act of picking a commit from a branch and applying it to another. 
+git cherry-pick can be useful for undoing changes. 
+For example, say a commit is accidently made to the wrong branch. 
+You can switch to the correct branch and cherry-pick the commit to where it should belong.
+branch tree must be clean and must have a last sucessful commit
+Example - a - b - c - d   Main
+          \
+           e - f - g Feature
+In is this scenario we want to commit f in main so we use git cherry-pick in branch main and this copies the commit in the main branch.
+Commands - 
+	git checkout main
+	git cherry-pick f
+After execution - 
+a - b - c - d - f   Main
+         \
+           e - f - g Feature
+
+The f commit has been successfully picked into the main branch
+
